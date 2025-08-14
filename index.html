@@ -1,3 +1,8 @@
+    }
+  </style>
+</head>
+<body>
+  <h1 class="brand"><span class="accent">severeweather.com</span></h1>
 </body>
 </html>
 <!doctype html>
@@ -18,10 +23,8 @@
       color: #0b1220;
       border: 2px solid #000; /* cienka czarna ramka */
       box-sizing: border-box;
-      padding: 20px; /* odstęp od ramki */
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
+      padding: 20px;
+      position: relative;
     }
     .brand {
       margin: 0;
@@ -35,9 +38,23 @@
       border-bottom: 3px solid #111827;
       padding-bottom: 2px;
     }
+    .map-link {
+      position: absolute;
+      top: 10px; /* odstęp od górnej krawędzi */
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 600;
+      font-size: 18px;
+      color: black;
+      text-decoration: none;
+    }
+    .map-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <h1 class="brand"><span class="accent">severeweather.com</span></h1>
+  <a class="map-link" href="https://www.google.com/maps" target="_blank">MAPA</a>
 </body>
 </html>
