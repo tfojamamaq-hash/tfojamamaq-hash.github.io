@@ -1,3 +1,5 @@
+</body>
+</html>
 <!doctype html>
 <html lang="pl">
 <head>
@@ -14,20 +16,23 @@
     body {
       font-family: Inter, ui-sans-serif, system-ui, sans-serif;
       color: #0b1220;
+      border: 2px solid #000; /* cienka czarna ramka */
+      box-sizing: border-box;
+      padding: 20px; /* odstęp od ramki */
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
     .brand {
-      position: fixed;
-      top: clamp(8px, 3vw, 24px);
-      left: clamp(10px, 3.2vw, 28px);
       margin: 0;
       font-weight: 800;
-      font-size: clamp(14px, 3vw, 32px); /* zmniejszony rozmiar */
+      font-size: clamp(14px, 3vw, 32px);
       letter-spacing: -0.02em;
       line-height: 0.92;
     }
     .accent {
       display: inline-block;
-      border-bottom: 3px solid #111827; /* cieńsza linia podkreślenia */
+      border-bottom: 3px solid #111827;
       padding-bottom: 2px;
     }
   </style>
